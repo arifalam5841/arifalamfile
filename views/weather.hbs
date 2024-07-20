@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+        <link rel="stylesheet" href="cssfile/navbarstyle.css">
+        <link rel="stylesheet" href="cssfile/weather.css">
+
+    
+
+</head>
+<body>
+
+{{>navbar}}
+
+
+<form action="/submit" method="post">
+    <div id="input-btn-box">
+        <input id="name" type="text" name="name" placeholder="Enter state name">
+        <button id="search-btn" type="submit">Search</button>
+    </div>
+</form>
+    <div id="result-box">
+        <h4 id="city-name-box">
+            {{place}}
+        </h4>
+        <h1 id="temp-box">
+            {{tempreture}}
+        </h2>
+    </div>
+
+    {{>footer}}
+
+</body>
+
+<script>
+    {{!-- let submit_btn = document.getElementById('search-btn')
+    submit_btn.addEventListener('click', (e)=>{
+       e.preventDefault()
+    }) --}}
+</script>
+</html>
