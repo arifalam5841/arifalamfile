@@ -74,6 +74,7 @@ app.post('/submit', (req, res) => {
 
 
         // gettting data and putting in the right place in the hbs file or html
+        // helloe
         console.log(maindata[0].main.temp)
 
         res.render('weather', {
